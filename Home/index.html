@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,15 +6,12 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>Starter Template · Bootstrap v5.0</title>
-
+    <title>Liquid - Investment and stock broker website</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
+    <!--bootstrap CORE CSS-->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    
-
-    <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <!--  innerCSS  -->
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -30,60 +27,200 @@
         }
       }
     </style>
+    <!--  innerCSS ending  -->
 
     
     <!-- Custom styles for this template -->
     <link href="starter-template.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/dist/css/all.min.css">
+    <!-- Custom styles for this template ending -->
   </head>
+
   <body>
-    
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <section class="container-fluid hero pt-3">
+      <!--  navbar  -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="assets/Img/Logo.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown01">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0 ms-5">
+                <li class="nav-item me-3">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item me-3">
+                  <a class="nav-link" href="#">Markets</a>
+                </li>
+                <li class="nav-item dropdown me-3">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Company</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li> 
+                <li class="nav-item me-3">
+                  <a class="nav-link" href="#">Education</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Resources</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li> 
+              </ul>
+              <button class="btn btn-danger btn-lg fs-6 text-dark mt-4 img-holder">CREATE ACCOUNT</button>
+              <li class="nav-item me-3 fs-4 img-holder">
+                <a class="nav-link text-muted account" href="#"><i class="fas fa-user-circle"></i></a>
+              </li>
+            </div>
+          </div>
+        </nav>
+      <!--  navbar ending  -->
 
-<main class="container">
+      <!-- banner-slider -->
+        <div class="banner">
+          <div class="container ms-5 holder">
+            <div class="row">
+              <div class="col-md-6 mt-5 text-col">
+                <h1 class="text-light fw-bold fs-1 slider-text">Multi-regulated global broker.</h1>
+                <p class="text-muted fs-5 mt-4">
+                  A trusted destination for traders worldwide, Authorised by FCA, ASIC & FSCA
+                </p>
+                <button class="btn btn-outline-danger text-uppercase mt-3">Discover Accounts</button>
+              </div>
 
-  <div class="starter-template text-center py-5 px-3">
-    <h1>Bootstrap starter template</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-  </div>
+              <div class="col-md-6 img-holder">
+                <img src="assets/Img/in-liquid-slide-2.svg" class="float-end" width="450" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- banner-slider ending -->
+    </section>
 
-</main><!-- /.container -->
+    <section class="cards">
+      <div class="container pt-5">
+        <h1 class="fs-1 text-light cards-text">Save time. Get <span class="text-danger">higher return</span>. <button class="btn btn-outline-danger float-end">FIND OUT MORE <i class="fas fa-angle-right ms-3"></i></button> <br>
+        Multiply wealth.</h1>
 
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+          <div class="col">
+            <div class="card h-100 bg-dark p-0  card-1 text-light">
+              <div class="card-body">
+                <img src="assets/Img/in-liquid-object-1.svg" width="80%" class="card-1_img float-end" alt="">
+                <h4 class="card-title fw-bold ms-3">Various assets</h4>
+                <p class="card-text text-muted card-paragraph m-3">Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-dark p-0  card-1 text-light">
+              <div class="card-body">
+                <img src="assets/Img/in-liquid-object-2.svg" width="80%" class="card-2_img float-end" alt="">
+                <h4 class="card-title fw-bold ms-3">Market analysis</h4>
+                <p class="card-text text-muted card-paragraph m-3">Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 bg-dark p-0  card-1 text-light">
+              <div class="card-body">
+                <img src="assets/Img/in-liquid-object-3.svg" width="80%" class="card-3_img float-end" alt="">
+                <h4 class="card-title fw-bold ms-3">Enhanced tools</h4>
+                <p class="card-text text-muted card-paragraph m-3">Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="bg-white mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="assets/Img/in-liquid-icon-1.svg" alt="">
+              </div>
+
+              <div class="col-md-10">
+                <h4 class="fw-bold mt-3">Expert service</h4>
+                <p class="mt-4 text-muted fs-6">
+                  Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam nihil molestiae consequatur.
+                </p>
+
+                <a href="" class="text-muted text-decoration-none text-uppercase fs-6 fw-bold">Learn more <i class="fas fa-arrow-right ms-3"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="assets/Img/in-liquid-icon-2.svg" alt="">
+              </div>
+
+              <div class="col-md-10">
+                <h4 class="fw-bold mt-3">Fully regulated</h4>
+                <p class="mt-4 text-muted fs-6">
+                  Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam nihil molestiae consequatur.
+                </p>
+
+                <a href="" class="text-muted text-decoration-none text-uppercase fs-6 fw-bold">Learn more <i class="fas fa-arrow-right ms-3"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="assets/Img/in-liquid-icon-3.svg" alt="">
+              </div>
+
+              <div class="col-md-10">
+                <h4 class="fw-bold mt-3">
+                  Financial strength</h4>
+                <p class="mt-4 text-muted fs-6">
+                  Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam nihil molestiae consequatur.
+                </p>
+
+                <a href="" class="text-muted text-decoration-none text-uppercase fs-6 fw-bold">Learn more <i class="fas fa-arrow-right ms-3"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="assets/Img/in-liquid-icon-4.svg" alt="">
+              </div>
+
+              <div class="col-md-10">
+                <h4 class="fw-bold mt-3">
+                  Integrated support</h4>
+                <p class="mt-4 text-muted fs-6">
+                  Quis autem vel eum iure reprehenderit qui in voluptate velit esse quam nihil molestiae consequatur.
+                </p>
+
+                <a href="" class="text-muted text-decoration-none text-uppercase fs-6 fw-bold">Learn more <i class="fas fa-arrow-right ms-3"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      
+    <script src="assets/dist/js/all.min.js"></script>
   </body>
 </html>

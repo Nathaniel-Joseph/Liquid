@@ -1,3 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;');
 body {
-  padding-top: 5rem;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+  background: linear-gradient(rgb(0,0,0,0.85), rgb(0,0,0,0.85)), url("assets/Img/scg-canvas-background-animation-24.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.account{
+  transition: .3s ease-in-out;
+}
+
+.account:hover{
+  color: #fff !important;
+}
+
+.slider-text{
+  font-size: 3.5rem !important;
+  font-weight: 900 !important;
+}
+
+.banner{
+  margin-top: 8% !important;
+}
+
+.btn-outline-danger{
+  color: #fff;
+  padding: 10px;
+  border: 2px solid #dc3545;
+  transition: .2s ease-in-out;
+}
+
+.btn-outline-danger:hover{
+  border: 2px solid #fff;
+  background: transparent;
+}
+
+.badge{
+  font-weight: 500 !important;
+  font-size: .8rem !important;
+  color: #333 !important;
+}
+
+.cards{
+  background-color: rgba(0, 0, 0, 0.918);
+  height: 90vh;
+}
+
+.cards-text{
+  font-weight: 600;
+  font-size: 2rem !important;
+}
+
+.card-1_img{
+  margin-top: -50px;
+  margin-left: 100%;
+}
+
+.card-2_img{
+  margin-top: -45px;
+  margin-left: 100%;
+}
+
+.card-3_img{
+  margin-top: -18px;
+  margin-left: 100%;
+}
+
+.card-paragraph{
+  font-size: 1.2rem;
+}
+
+@media (max-width: 435px) {
+  html{
+    overflow-x: hidden;
+  }
+
+  .hero{
+    width: 100%;
+    height: 85vh;
+  }
+
+  .banner{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 25% !important;
+  }
+
+  .holder{
+    margin: auto !important;
+  }
+
+  .slider-text{
+    font-size: 2rem !important;
+    font-weight: 600 !important;
+  }
+
+  .img-holder{
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero{
+    height: 100vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero{
+    width: 100%;
+  }
+
+  html{
+    overflow-x: hidden;
+  }
+
+  .img-holder{
+    display: none;
+  }
+
+  .text-col{
+    width: 80%;
+  }
+  
+  .holder{
+    margin: auto 0px !important;
+  }
+
+  .slider-text{
+    font-size: 2.5rem !important;
+    font-weight: 600;
+  }
+
+  .hero{
+    height: 55vh;
+  }
+
+  .navbar-nav{
+    margin-left: 3% !important;
+  }
 }
